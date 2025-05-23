@@ -107,11 +107,11 @@ export function Footer() {
                 <div>
                   <div className="bg-white p-2 rounded-md w-32 h-32 mx-auto md:mx-0">
                     <Image
-                      src="/placeholder.svg?height=120&width=120&text=企业微信二维码"
+                      src="/IMG_0438.JPG"
                       alt="企业微信二维码"
                       width={120}
                       height={120}
-                      className="w-full h-full"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                   <p className="text-center md:text-left text-sm mt-2">扫码咨询</p>
