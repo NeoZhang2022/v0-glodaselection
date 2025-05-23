@@ -105,13 +105,15 @@ export function Footer() {
                   <p className="text-center md:text-left text-sm mt-2">扫码关注公众号</p>
                 </div>
                 <div>
-                  <div className="bg-white p-2 rounded-md w-32 h-32 mx-auto md:mx-0">
-                    <Image
+                  <div className="bg-white p-2 rounded-md w-32 h-32 mx-auto md:mx-0 flex items-center justify-center">
+                    <img
                       src="/IMG_0438.JPG"
                       alt="企业微信二维码"
-                      width={120}
-                      height={120}
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-contain rounded"
+                      onError={(e) => {
+                        console.log("Image failed to load:", e)
+                        e.target.src = "/placeholder.svg?height=120&width=120&text=企业微信二维码"
+                      }}
                     />
                   </div>
                   <p className="text-center md:text-left text-sm mt-2">扫码咨询</p>
